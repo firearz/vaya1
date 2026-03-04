@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vaya-mint: #d4f0d6;
+  --color-vaya-periwinkle: #d1d5f2;
+  --color-vaya-offwhite: #faf9f6;
+  --color-vaya-blue: #2a52be;
+  --color-vaya-coral: #ff7f50;
+  --color-vaya-dark: #1a1a24;
+  
+  --font-inter: "Inter", sans-serif;
+  --font-retro: "Press Start 2P", system-ui;
+}
+
+body {
+  background-color: var(--color-vaya-offwhite);
+  color: var(--color-vaya-dark);
+  font-family: var(--font-inter);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Organic shapes */
+.organic-shape-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.organic-shape-2 {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.organic-shape-3 {
+  border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
